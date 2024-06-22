@@ -1,0 +1,61 @@
+<div class="text-center">
+   
+</div>
+<html>
+<head>
+    <link rel="stylesheet" href="StyleSheet_Home.css">
+    <div id="grad">
+        <h1 id="heading" class="display-4">Welcome to Android Tutorials</h1>
+
+    </div>
+   
+    <p>Learn about how to develop Android applications from installing, testing, and launching</p>
+    <style>
+        #grad {
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)
+        }
+
+         .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .circle-button {
+        width: 150px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #3498db;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .circle-button:hover {
+        background-color: #f1b04c;
+    }
+    .circle-button .button-text {
+        color: #fff;
+        font-size: 18px;
+    }
+    </style>
+</head>
+    <body>
+    <div class="button-container">
+
+        <div class="circle-button" onclick="openPage('https://androidtutorials.androidparadise.site/installation/')"><span class="button-text">Installation</span></div>
+        <div class="circle-button" onclick="openPage('https://androidtutorials.androidparadise.site/variables/')"><span class="button-text">Variables</span></div>
+        <div class="circle-button" onclick="openPage('https://androidtutorials.androidparadise.site/user-interface/')"><span class="button-text">User Interface</span></div>
+        
+    </div>
+    <script>
+        function openPage(url) {
+window.location.href = url;
+
+        }
+       
+
+    </script>
+    </body>
+</html>
